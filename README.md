@@ -2,6 +2,8 @@
 [![Docker pulls](https://img.shields.io/docker/pulls/lucassabreu/plantuml.svg)](https://hub.docker.com/r/lucassabreu/plantuml/)
 [![Latest Tag](https://img.shields.io/github/tag/lindt/docker_plantuml.svg)](https://hub.docker.com/r/lucassabreu/plantuml/)
 
+> this is a adaptation of [@lindt](github.com/lindt/docker_plantuml) Dockerfile to accept multiple files
+
 # docker_plantuml
 
 Docker Container for [PlantUML](http://plantuml.com)
