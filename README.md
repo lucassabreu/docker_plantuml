@@ -1,6 +1,6 @@
-[![](https://badge.imagelayers.io/think/plantuml.svg)](https://imagelayers.io/?images=think/plantuml:latest 'think/plantuml')
-[![Docker pulls](https://img.shields.io/docker/pulls/think/plantuml.svg)](https://hub.docker.com/r/think/plantuml/)
-[![Latest Tag](https://img.shields.io/github/tag/lindt/docker_plantuml.svg)](https://hub.docker.com/r/think/plantuml/)
+[![](https://badge.imagelayers.io/lucassabreu/plantuml.svg)](https://imagelayers.io/?images=lucassabreu/plantuml:latest 'lucassabreu/plantuml')
+[![Docker pulls](https://img.shields.io/docker/pulls/lucassabreu/plantuml.svg)](https://hub.docker.com/r/lucassabreu/plantuml/)
+[![Latest Tag](https://img.shields.io/github/tag/lindt/docker_plantuml.svg)](https://hub.docker.com/r/lucassabreu/plantuml/)
 
 # docker_plantuml
 
@@ -13,12 +13,18 @@ This docker container does this for you. And allows you to pipe by default into 
 
 ## Usage
 
-```
-cat test.uml | docker run --rm -i think/plantuml > test.svg
+```sh
+cat test.uml | docker run --rm -i lucassabreu/plantuml > test.svg
 ```
 
 The default will output svg. If png output is wanted, call it like this:
 
+```sh
+cat test.uml | docker run --rm -i lucassabreu/plantuml -p -tpng > test.png
 ```
-cat test.uml | docker run --rm -i think/plantuml -tpng > test.png
+
+You can also process multiple files at once using:
+
+```sh
+docker run --rm -i -v "$(pwd):/puml" lucassabreu/plantuml -tsvg -progress "/puml/*.puml"
 ```
