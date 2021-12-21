@@ -1,6 +1,6 @@
 [![](https://badge.imagelayers.io/lucassabreu/plantuml.svg)](https://imagelayers.io/?images=lucassabreu/plantuml:latest 'lucassabreu/plantuml')
 [![Docker pulls](https://img.shields.io/docker/pulls/lucassabreu/plantuml.svg)](https://hub.docker.com/r/lucassabreu/plantuml/)
-[![Latest Tag](https://img.shields.io/github/tag/lindt/docker_plantuml.svg)](https://hub.docker.com/r/lucassabreu/plantuml/)
+[![Latest Tag](https://img.shields.io/github/tag/lucassabreu/docker_plantuml.svg)](https://hub.docker.com/r/lucassabreu/plantuml/)
 
 > this is a adaptation of [@lindt](github.com/lindt/docker_plantuml) Dockerfile to accept multiple files
 
