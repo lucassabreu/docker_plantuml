@@ -1,6 +1,6 @@
 FROM openjdk:19-ea-jdk-alpine3.16
 MAINTAINER think@hotmail.de
-ENV PLANTUML_VERSION=1.2026.1
+ENV PLANTUML_VERSION=1.2026.2
 ENV LANG=en_US.UTF-8
 RUN \
   apk add --no-cache graphviz wget ca-certificates && \
