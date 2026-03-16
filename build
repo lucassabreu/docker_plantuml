@@ -21,7 +21,7 @@ function build_missing_tags {
       echo 'needs building'
       sed -i "s/PLANTUML_VERSION=.*/PLANTUML_VERSION=${tag}/" Dockerfile
       git add Dockerfile && git commit -m "using version ${tag}" && git push
-      git tag "${tag}" && git push --tags
+      git tag "${tag}" -m "v${tag}" && git push --tags
     fi
   done
 }
